@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<!-- saved from url=http://127.0.0.1:5500/temprature Converter/# -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temperature Converter</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="card">
+            <div class="card-header">
+                <h3>Temperature Converter</h3>
+            </div>
+            <div class="card-body">
+                <form id="temp-form">
+                    <div class="form-group">
+                        <label for="temperature">Temperature</label>
+                        <input type="number" class="form-control" id="temperature" placeholder="Enter temperature">
+                    </div>
+                    <div class="form-group">
+                        <label for="from-unit">From</label>
+                        <select class="form-control" id="from-unit">
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="to-unit">To</label>
+                        <select class="form-control" id="to-unit">
+                            <option value="celsius">Celsius</option>
+                            <option value="fahrenheit">Fahrenheit</option>
+                            <option value="kelvin">Kelvin</option>
+                        </select>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Convert</button>
+                </form>
+                <div id="result" class="mt-4"></div>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
